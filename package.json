@@ -1,0 +1,22 @@
+{
+  "name": "rpg_game",
+  "version": "1.0.0",
+  "description": "best rpg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonShishkin11/rpg_game.git"
+  },
+  "keywords": [
+    "rpg"
+  ],
+  "author": "Anton Shishkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonShishkin11/rpg_game/issues"
+  },
+  "homepage": "https://github.com/AntonShishkin11/rpg_game#readme"
+}
