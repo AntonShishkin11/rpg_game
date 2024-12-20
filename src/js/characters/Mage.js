@@ -1,5 +1,5 @@
-import { Player } from './Player';
-import { Staff } from '../weapons/Staff';
+import { Player } from './Player.js';
+import { Staff } from '../weapons/Staff.js';
 
 export class Mage extends Player {
     constructor() {

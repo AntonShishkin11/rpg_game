@@ -1,12 +1,22 @@
-import { Player } from './js/characters/Player';
-import { Archer } from './js/characters/Archer';
-import { Warrior } from './js/characters/Warrior';
-import { Mage } from './js/characters/Mage';
-import { Dwarf } from './js/characters/Dwart';
-import { Crossbowman } from './js/characters/Crossbowman';
-import { Demourge } from './js/characters/Demourge';
-
-// Функция play (пока пустая)
+import { Archer } from './characters/Archer.js';
+import { Crossbowman } from './characters/Crossbowman.js';
+import { Demourge } from './characters/Demourge.js';
+import { Dwarf } from './characters/Dwarf.js';
+import { Mage } from './characters/Mage.js';
+import { Player } from './characters/Player.js';
+import { Warrior } from './characters/Warrior.js';
 export function play() {
-    console.log("Игра началась!");
+
+    const characters = [
+        new Player(),
+        new Archer(),
+        new Crossbowman(),
+        new Demourge(),
+        new Dwarf(),
+        new Mage(),
+        new Warrior()
+    ];
+    return {
+        characters
+    };
 }

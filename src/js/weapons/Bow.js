@@ -1,4 +1,4 @@
-import { Weapon } from './Weapon';
+import { Weapon } from './Weapon.js';
 
 export class Bow extends Weapon {
 

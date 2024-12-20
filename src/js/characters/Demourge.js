@@ -1,5 +1,5 @@
-import { Mage } from './Mage';
-import { StormStaff } from '../weapons/StormStaff';
+import { Mage } from './Mage.js';
+import { StormStaff } from '../weapons/StormStaff.js';
 
 export class Demourge extends Mage {
     constructor() {

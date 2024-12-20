@@ -1,11 +1,12 @@
-const path = require ( 'path' );
-const HtmlWebpackPlugin = require ( 'html-webpack-plugin' );
-const MiniCssExtractPlugin = require ( 'mini-css-extract-plugin' );
-module.exports = {
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+
+export default {
     entry: './src/index.js',
     output: {
-        path: path. resolve (__dirname, 'dist' ),
-        filename: 'app.bundle.js'
+        path: path.resolve(process.cwd(), 'dist'), // Используйте process.cwd() для получения текущего рабочего каталога
+        filename: 'app.bundle.js',
     },
     module: {
         rules: [
@@ -13,18 +14,18 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader'
-                ]
-            }
-        ]
+                    'css-loader',
+                ],
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: 'index.html'
+            filename: 'index.html',
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.css'
-        })
-    ]
+            filename: 'style.css',
+        }),
+    ],
 };

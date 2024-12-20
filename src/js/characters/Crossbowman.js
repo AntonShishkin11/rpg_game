@@ -1,5 +1,5 @@
-import { Archer } from './Archer';
-import { LongBow } from '../weapons/LongBow';
+import { Archer } from './Archer.js';
+import { LongBow } from '../weapons/LongBow.js';
 
 export class Crossbowman extends Archer {
     constructor() {

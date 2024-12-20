@@ -1,7 +1,7 @@
-import { Warrior } from './Warrior';
-import { Axe } from '../weapons/Axe';
+import { Warrior } from './Warrior.js';
+import { Axe } from '../weapons/Axe.js';
 
-export class Dwart extends Warrior {
+export class Dwarf extends Warrior {
     constructor() {
         super();
         this.weapon = new Axe(); // Начальное оружие для дворфа

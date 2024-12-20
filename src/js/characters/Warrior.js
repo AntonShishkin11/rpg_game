@@ -1,5 +1,5 @@
-import { Player } from './Player';
-import { Sword } from '../weapons/Sword';
+import { Player } from './Player.js';
+import { Sword } from '../weapons/Sword.js';
 
 export class Warrior extends Player {
     constructor() {
