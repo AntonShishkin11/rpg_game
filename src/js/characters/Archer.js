@@ -2,9 +2,12 @@ import { Player } from './Player.js';
 import { Bow } from '../weapons/Bow.js';
 
 export class Archer extends Player {
-    constructor() {
-        super();
-        this.weapon = new Bow(); // Начальное оружие для лучника
+    constructor(position, name) {
+        super(position, name);
+        this.life = 80;
+        this.magic = 35;
+        this.weapon = new Bow();
+        this.description = 'Лучник';
     }
 
 }
